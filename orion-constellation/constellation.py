@@ -27,7 +27,7 @@
 # `from mpl_toolkits.mplot3d import Axes3D`
 # 
 
-# In[1]:
+# In[18]:
 
 
 get_ipython().run_line_magic('matplotlib', '')
@@ -43,7 +43,7 @@ from mpl_toolkits.mplot3d import Axes3D
 # 
 # Spend some time looking at `x`, `y`, and `z`, does each fall within a range?
 
-# In[2]:
+# In[27]:
 
 
 # Orion
@@ -66,7 +66,7 @@ z = [2.06, 0.84, 1.56, 2.07, 2.36, 1.72, 0.66, 1.25,1.38]
 # 
 # Does the 2D visualization look like the Orion constellation we see in the night sky? Do you recognize its shape in 2D? There is a curve to the sky, and this is a flat visualization, but we will visualize it in 3D in the next step to get a better sense of the actual star positions. 
 
-# In[3]:
+# In[32]:
 
 
 fig = plt.figure(figsize=(10,20))
@@ -102,7 +102,7 @@ plt.show()
 # Render your visualization. (hint `plt.show()`.)
 # 
 
-# In[4]:
+# In[33]:
 
 
 fig_3d = plt.figure(figsize=(10,10))
@@ -124,7 +124,7 @@ plt.show()
 # Feel free to map more stars by looking up other celestial x, y, z coordinates [here](http://www.stellar-database.com/).
 # 
 
-# In[6]:
+# In[34]:
 
 
 #test data from starcharts
@@ -139,7 +139,7 @@ z_values=[-0.099456,0.231685,0.90029,-0.044468,-0.042707,0.486196,0.858515,0.312
 -0.905403,0.142461,0.615231,-0.937433,-0.484524,-0.342971,0.233147,-0.211488,0.623569]
 
 #make the figure
-fig_3d = plt.figure(figsize=(10,10))
+fig_3d = plt.figure(figsize=(20,20))
 ax = fig_3d.add_subplot(1,1,1, projection='3d')
 constellation3d = plt.plot(x_values,y_values,z_values)
 plt.show()
